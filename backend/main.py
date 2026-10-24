@@ -24,8 +24,10 @@ from pydantic import BaseModel, EmailStr, Field
 
 
 # Make the project root available so Python can find the root-level src folder.
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+# Add the repository root so backend imports can find the root-level src package.
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 import sys
 from pathlib import Path
