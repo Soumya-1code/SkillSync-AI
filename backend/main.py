@@ -101,6 +101,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    allow_origin_regex=r"^https://skill-sync-ai-frontend[a-z0-9-]*-sharmasoumya4211-6485s-projects\.vercel\.app$",
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Authorization", "Content-Type"],
