@@ -1,0 +1,105 @@
+:root {
+  --ink: #17233b;
+  --navy: #17233b;
+  --muted: #69758a;
+  --line: #e8e8ee;
+  --lav: #7461c8;
+  --lav-dark: #5c49ab;
+  --lav-light: #f2effb;
+  --surface: #ffffff;
+  --shadow: 0 16px 42px rgba(28, 36, 60, .07);
+  background: #f8f8f6;
+  color: #17233b;
+}
+
+body,
+.app-frame { background: #f8f8f6; color: #17233b; }
+
+.brand-type strong,
+.sidebar-wordmark { color: #17233b; }
+.brand-symbol { color: #6958ba; }
+
+.public-nav { background: rgba(255, 255, 255, .94); border-color: #e9e9ee; }
+.public-nav-inner { max-width: 1280px; }
+.landing-hero { max-width: 1280px; min-height: 640px; }
+.hero-copy h1 { color: #17233b; font-weight: 720; letter-spacing: -3.4px; }
+.hero-copy h1 span { background: linear-gradient(100deg, #7863cb, #5878c7); background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-lede { color: #68748a; }
+.announcement { background: #faf9fd; }
+.preview-window { box-shadow: 0 28px 75px rgba(31, 38, 65, .14), 0 3px 10px rgba(31, 38, 65, .05); }
+.section-heading h2,
+.workflow-intro h2 { color: #17233b; }
+.feature-card { border-radius: 16px; box-shadow: 0 4px 14px rgba(31, 38, 65, .025); }
+.feature-card:hover { box-shadow: 0 16px 38px rgba(31, 38, 65, .08); }
+.privacy-band { background: #f5f4fa; }
+.closing-cta { background: linear-gradient(112deg, #20243e, #34345b); }
+
+.app-sidebar { width: 258px; padding: 22px 15px 15px; background: #fff; }
+.sidebar-brand { margin-bottom: 39px; }
+.sidebar-brand .brand-symbol { width: 38px; height: 38px; }
+.side-link { height: 43px; border-radius: 10px; font-size: 12px; }
+.side-link-active { background: #f1effa; }
+.app-main { margin-left: 258px; }
+.app-topbar { height: 70px; padding: 0 40px; background: rgba(255, 255, 255, .95); }
+.topbar-heading { display: grid; gap: 3px; }
+.topbar-heading .breadcrumb { font-size: 8px; letter-spacing: 1.2px; font-weight: 750; color: #9a9daf; }
+.topbar-heading strong { font-size: 14px; color: #1b2740; letter-spacing: -.2px; }
+.topbar-right { gap: 22px; }
+.topbar-account { display: flex; align-items: center; gap: 9px; color: #606d82; font-size: 10px; max-width: 220px; }
+.topbar-account > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.privacy-chip { border: 1px solid #e8eee8; border-radius: 999px; padding: 7px 10px; background: #fbfdfb; }
+.page-content { max-width: 1260px; padding: 42px 46px 52px; }
+.page-intro { margin: 0 0 32px; }
+.page-intro h1 { color: #17233b; font-size: 31px; letter-spacing: -1.15px; }
+.page-intro p { color: #6c778b; font-size: 13px; }
+.app-footer { margin: 0 46px; }
+.data-card,
+.activity-empty { border-color: #e9e9ef; border-radius: 15px; box-shadow: 0 5px 20px rgba(30, 37, 61, .025); }
+.overview-banner { min-height: 205px; border-color: #e7e3f2; border-radius: 17px; background: linear-gradient(108deg, #f0eef9 0%, #fbfafc 58%, #f5f6fb 100%); padding: 34px 38px; }
+.overview-banner h2 { font-size: 22px; color: #1b2740; }
+.overview-banner p { font-size: 12px; color: #68748a; }
+.section-line { margin-bottom: 19px; }
+.section-line h2 { color: #1b2740; font-size: 17px; }
+.dashboard-tools { gap: 15px; }
+.tool-card { border-radius: 15px; padding: 21px; box-shadow: 0 5px 18px rgba(30, 37, 61, .025); }
+.tool-card:hover { box-shadow: 0 14px 30px rgba(30, 37, 61, .075); }
+.tool-card h3 { font-size: 13px; color: #1b2740; }
+.tool-card p { color: #6e788c; font-size: 11px; }
+.activity-empty { padding: 21px 22px; background: #fff; }
+
+.auth-page { background: radial-gradient(ellipse at 50% 10%, #efecfa 0, transparent 43%), #f8f8f6; }
+.auth-card { border-radius: 20px; box-shadow: 0 24px 70px rgba(32, 36, 62, .1); }
+.auth-heading h1 { color: #17233b; }
+.button { border-radius: 11px; }
+.button-primary { background: linear-gradient(110deg, #7561c7, #655fbd); }
+.button-primary:hover:not(:disabled) { background: linear-gradient(110deg, #6552b4, #5551ad); }
+
+.tool-card,
+.feature-card,
+.data-card { transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.tool-card:focus-visible,
+.feature-card:focus-within { outline-offset: 4px; }
+
+@media (max-width: 900px) {
+  .app-topbar { padding: 0 24px; }
+  .page-content { padding: 32px 26px 42px; }
+  .app-footer { margin: 0 26px; }
+}
+
+@media (max-width: 700px) {
+  .app-sidebar { width: 270px; }
+  .app-main { margin-left: 0; }
+  .app-topbar { height: 62px; padding: 0 16px; }
+  .topbar-account > span:last-child { display: none; }
+  .topbar-right { gap: 9px; }
+  .privacy-chip { padding: 6px 8px; }
+  .page-content { padding: 26px 18px 34px; }
+  .page-intro h1 { font-size: 26px; }
+  .app-footer { margin: 0 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-card,
+  .feature-card,
+  .data-card { transition: none; }
+}
